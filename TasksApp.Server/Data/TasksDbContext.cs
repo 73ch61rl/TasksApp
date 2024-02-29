@@ -6,6 +6,6 @@ namespace TasksApp.Server.Data
     public class TasksDbContext : DbContext
     {
         public TasksDbContext(DbContextOptions<TasksDbContext> options) : base(options) { }
-        public DbSet<Task> Tasks { get; set; }
+        public virtual DbSet<Task> Tasks { get; set; }
     }
 }
