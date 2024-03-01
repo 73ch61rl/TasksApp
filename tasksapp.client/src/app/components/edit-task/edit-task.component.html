@@ -4,11 +4,11 @@
     <div class="col-6">
       <form #form="ngForm" (ngSubmit)="updateTask()">
         <div class="mb-3">
-          <label for="id" class="form-label">Id</label>
+          <label for="id" class="form-label"><strong>Task ID</strong></label>
           <input type="text" class="form-control bg-light" id="id" name="id" readonly [(ngModel)]="updateTaskRequest.id" />
         </div>
         <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
+          <label for="name" class="form-label"><strong>Name</strong></label>
           <input type="text" class="form-control" id="name" name="name" [(ngModel)]="updateTaskRequest.name" />
         </div>
         <button type="submit" class="btn btn-primary">Update</button>
